@@ -1,0 +1,12 @@
+import calendar
+yyyy=input("Enter year in yyyy format : ")
+while yyyy.isdigit==False or int(yyyy)>9999 or int(yyyy)<1:
+    yyyy=input("Enter valid year : ")
+yyyy=int(yyyy)
+
+mm=input("Enter month in mm format : ")
+while mm.isdigit==False or int(mm)>12 or int(mm)<1:
+    mm=input("Enter valid month : ")
+mm=int(mm)
+
+print(calendar.month(yyyy,mm))
